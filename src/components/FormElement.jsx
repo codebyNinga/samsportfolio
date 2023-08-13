@@ -1,4 +1,4 @@
-export default ({type, label, placeholder, fieldRef, hasError}) => {
+const CustomInput = ({ type, label, placeholder, fieldRef, hasError }) => {
   const classes = "form-control w-full px-3 py-1.5 text-gray-700 rounded border border-solid border-gray-300 focus:border-pink-600 focus:outline-none";
   
   return(
@@ -12,4 +12,8 @@ export default ({type, label, placeholder, fieldRef, hasError}) => {
           {hasError && <p className="text-red-500 text-xs italic">{`${label} is required`}</p>}
     </div>
   );
-}
+};
+
+CustomInput.displayName = 'CustomInput';
+
+export default CustomInput;
