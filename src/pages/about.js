@@ -122,4 +122,4 @@ every project I work on. I look forward to the opportunity to bring my skills an
   )
 }
 
-export default about
+export default about;
